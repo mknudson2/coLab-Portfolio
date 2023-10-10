@@ -86,7 +86,7 @@ html {
   flex-wrap: nowrap;
   animation: 
     scroll 
-    var(--_animation-duration, 40s) 
+    var(--_animation-duration, 200s) 
     var(--_animation-direction, forwards) 
     linear 
     infinite;
@@ -142,6 +142,6 @@ html {
 
 }
 
-.school-img {
+/* .school-img {
   height: 150px;
-}
+} */

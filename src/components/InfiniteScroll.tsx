@@ -36,24 +36,23 @@ function InfiniteScroll() {
           <li>Git</li>
         </ul>
       </div>
-      
 
       <div className="scroller">
         <ul className="scroll-list scroller_inner">
           <li>
-            <img className="school-img" src="public/BYU_Cougars_logo.svg" alt="" />
+            <img className="school-img" src="public/4.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/Aberdeen.svg" alt="" />
+            <img className="school-img" src="public/1.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/wisconsin.svg" alt="" />
+            <img className="school-img" src="public/3.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/Yale.svg" alt="" />
+            <img className="school-img" src="public/5.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/stOlaf.jpeg" alt="" />
+            <img className="school-img" src="public/2.png" alt="" />
           </li>
         </ul>
       </div>
