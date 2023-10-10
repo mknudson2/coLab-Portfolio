@@ -130,8 +130,8 @@ html {
 
 .scroll-list1 li{
   padding: 1rem;
-  background: #354255;
-  border-radius: 0.5rem;
+  /* background: #354255; */
+  /* border-radius: 0.5rem; */
   box-shadow: 0 0.5rem 1rem -0.25rem hsl(218, 33%, 9%);
 
 
@@ -145,6 +145,6 @@ html {
 
 }
 
-/* .school-img {
-  height: 150px;
-} */
+.school-img {
+  height: 250px;
+}

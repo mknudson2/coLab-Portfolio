@@ -21,19 +21,41 @@ function InfiniteScroll() {
 
   return (
     <>
-      <div className="scroller">
-        <ul className="scroll-list1 scroller_inner">
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>Flask</li>
-          <li>PostgreSQL</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Bootstrap</li>
-          <li>Git</li>
+      <div className="scroller" data-direction="right">
+        <ul className="scroll-list scroller_inner">
+          <li>
+            <img src="public/html.png" alt="html5" />
+          </li>
+          <li>
+            <img src="public/css.png" alt="css3" />
+          </li>
+          <li>
+            <img src="public/git.png" alt="git" />
+          </li>
+          <li>
+            <img src="public/python.png" alt="python" />
+          </li>
+          <li>
+            <img src="public/js.png" alt="javascript" />
+          </li>
+          <li>
+            <img src="public/ts.png" alt="typescript" />
+          </li>
+          <li>
+            <img src="public/flask.png" alt="flask" />
+          </li>
+          <li>
+            <img src="public/postgresql.png" alt="postgresql" />
+          </li>
+          <li>
+            <img src="public/nodejs.png" alt="node.js" />
+          </li>
+          <li>
+            <img src="public/react.png" alt="react" />
+          </li>
+          <li>
+            <img src="public/bootstrap.png" alt="bootstrap 5" />
+          </li>
         </ul>
       </div>
 
