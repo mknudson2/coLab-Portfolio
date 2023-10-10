@@ -24,37 +24,37 @@ function InfiniteScroll() {
       <div className="scroller" data-direction="right">
         <ul className="scroll-list scroller_inner">
           <li>
-            <img src="public/html.png" alt="html5" />
+            <img src="/html.png" alt="html5" />
           </li>
           <li>
-            <img src="public/css.png" alt="css3" />
+            <img src="/css.png" alt="css3" />
           </li>
           <li>
-            <img src="public/git.png" alt="git" />
+            <img src="/git.png" alt="git" />
           </li>
           <li>
-            <img src="public/python.png" alt="python" />
+            <img src="/python.png" alt="python" />
           </li>
           <li>
-            <img src="public/js.png" alt="javascript" />
+            <img src="/js.png" alt="javascript" />
           </li>
           <li>
-            <img src="public/ts.png" alt="typescript" />
+            <img src="/ts.png" alt="typescript" />
           </li>
           <li>
-            <img src="public/flask.png" alt="flask" />
+            <img src="/flask.png" alt="flask" />
           </li>
           <li>
-            <img src="public/postgresql.png" alt="postgresql" />
+            <img src="/postgresql.png" alt="postgresql" />
           </li>
           <li>
-            <img src="public/nodejs.png" alt="node.js" />
+            <img src="/nodejs.png" alt="node.js" />
           </li>
           <li>
-            <img src="public/react.png" alt="react" />
+            <img src="/react.png" alt="react" />
           </li>
           <li>
-            <img src="public/bootstrap.png" alt="bootstrap 5" />
+            <img src="/bootstrap.png" alt="bootstrap 5" />
           </li>
         </ul>
       </div>
@@ -62,19 +62,19 @@ function InfiniteScroll() {
       <div className="scroller">
         <ul className="scroll-list scroller_inner">
           <li>
-            <img className="school-img" src="public/4.png" alt="" />
+            <img className="school-img" src="/4.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/1.png" alt="" />
+            <img className="school-img" src="/1.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/3.png" alt="" />
+            <img className="school-img" src="/3.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/5.png" alt="" />
+            <img className="school-img" src="/5.png" alt="" />
           </li>
           <li>
-            <img className="school-img" src="public/2.png" alt="" />
+            <img className="school-img" src="/2.png" alt="" />
           </li>
         </ul>
       </div>
