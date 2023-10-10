@@ -39,30 +39,76 @@ html {
 
 /*============= Hero ============== */
 .hero-container {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  padding-bottom: .2rem;
+  padding-top: .2rem;
+  width: 70%;
+  transform: translate(17%);
+  position: relative;
+  background: white;
+
+}
+
+.hero-container:before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+  transform: translate(7.5%);
+  border-radius: 12px;
+}
+
+.hero-container:after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -2;
+  filter: blur(40px);
+  transform: translate(7.5%);
+}
+
+.hero-container:before,
+.hero-container:after {
+  background: linear-gradient(35deg, #5fbfff, #485aff, #ffcc34);
+
+  /* background: linear-gradient(35deg, #5fbfff, #fff, #ffcc34); */
+}
+
+.hero-bkg {
+  background: white;
+  transform: translate(7.5%);
+  margin-left: .2rem;
+  margin-right: .2rem;
+  padding-bottom: 2rem;
+  border-radius: 12px;
 }
 
 .hero-header {
   font-size: 8rem;
   display: block;
-  margin-left: 5rem;
+  /* margin-left: 5rem; */
+  margin-bottom: 2rem;
   padding-top: -3rem;
+  width: 100%;
+  text-align: center;
+  font-family: "Feather Bold";
+  /* font-family: "DIN Next Rounded LT W01 Regular"; */
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .hero-subtitle {
   display: block;
   margin: 0 5rem;
-}
-
-.hero-img {
-  display: block;
-  height: 75vh;
-  border-radius: 50%;
-  box-shadow: 0 0 10px 5px lightgray;
-  margin-right: 5rem;
+  text-align: center;
+  font-style: italic;
+  font-family: "DIN Next Rounded LT W01 Regular";
 }
 
 
@@ -70,7 +116,7 @@ html {
 
 .scroller {
   max-width: 80%;
-  margin: 0 auto;
+  margin: -4rem auto;
   color: white;
 }
 
@@ -147,3 +193,7 @@ html {
 
 /*============= Bio ============== */
 
+.bio-container {
+  display: flex;
+
+}
