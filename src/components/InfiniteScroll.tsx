@@ -22,7 +22,7 @@ function InfiniteScroll() {
   return (
     <>
       <div className="scroller">
-        <ul className="scroll-list scroller_inner">
+        <ul className="scroll-list1 scroller_inner">
           <li>HTML5</li>
           <li>CSS3</li>
           <li>Python</li>
