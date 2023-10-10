@@ -33,10 +33,30 @@ function InfiniteScroll() {
           <li>React</li>
           <li>Node.js</li>
           <li>Bootstrap</li>
+          <li>Git</li>
         </ul>
       </div>
+      
 
-
+      <div className="scroller">
+        <ul className="scroll-list scroller_inner">
+          <li>
+            <img className="school-img" src="public/BYU_Cougars_logo.svg" alt="" />
+          </li>
+          <li>
+            <img className="school-img" src="public/Aberdeen.svg" alt="" />
+          </li>
+          <li>
+            <img className="school-img" src="public/wisconsin.svg" alt="" />
+          </li>
+          <li>
+            <img className="school-img" src="public/Yale.svg" alt="" />
+          </li>
+          <li>
+            <img className="school-img" src="public/stOlaf.jpeg" alt="" />
+          </li>
+        </ul>
+      </div>
     </>
   );
 }

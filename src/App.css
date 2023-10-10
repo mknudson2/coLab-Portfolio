@@ -69,7 +69,7 @@ html {
 /*============= Infinite Scroller ============== */
 
 .scroller {
-  max-width: 60%;
+  max-width: 80%;
   margin: 0 auto;
   color: white;
 }
@@ -77,8 +77,8 @@ html {
 .scroller[data-animated="true"]{
   overflow: hidden;
 
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(90deg, transparent, white 25%, white 75%, transparent);
+  mask: linear-gradient(90deg, transparent, white 25%, white 75%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller_inner {
@@ -86,7 +86,7 @@ html {
   flex-wrap: nowrap;
   animation: 
     scroll 
-    var(--_animation-duration, 120s) 
+    var(--_animation-duration, 40s) 
     var(--_animation-direction, forwards) 
     linear 
     infinite;
@@ -126,11 +126,22 @@ html {
   padding-inline: 0;
   list-style: none;
 }
-
+/* 
 .scroll-list li{
   padding: 1rem;
   background: #354255;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1rem -0.25rem hsl(218, 33%, 9%);
 
+} */
+
+
+.scroll-list li{
+  padding: 1.65rem;
+  /* box-shadow: 0 0.5rem 1rem -0.25rem hsl(218, 33%, 9%); */
+
+}
+
+.school-img {
+  height: 150px;
 }
