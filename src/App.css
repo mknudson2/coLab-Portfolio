@@ -1,7 +1,30 @@
 
+/* ========== Globals ============ */
+:root {
+  --header: 'Ubuntu', sans-serif;
+  --text: "DIN Next Rounded LT W01 Regular", sans-serif;
+  --cl-yellow: #ffcc34;
+  --cl-blue: #5fbfff;
+  --cl-mixed: #485aff;
+}
+
 html {
   scroll-behavior: smooth;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header);
+}
+
+p {
+  font-family: var(--text);
+}
+
+hr {
+  width: 80%;
+  transform: translate(13.5%);
+}
+
 
 /*============= Navbar ============== */
 .nav-container {
@@ -12,7 +35,7 @@ html {
 
 .navbar {
   box-shadow: 0 0 5px 5px lightgray;
-  margin: 0;
+  height: 5rem;
   font-size: x-large;
 }
 
@@ -31,9 +54,37 @@ html {
 
 .nav-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 3rem;
   width: 75%;
   padding-left: .5rem;
+  margin-left: 2rem;
+}
+
+.scroll-links {
+  font-family: var(--text);
+  font-size: 1.5rem;
+  border-radius: 12px;
+  padding: .5rem .7rem;
+}
+
+.scroll-links:hover {
+  box-shadow: 5px 5px 5px lightgray;
+  border-radius: 12px;
+  transition: .2s;
+  background: var(--cl-mixed);
+  color: white;
+}
+
+.resume-btn {
+  background-color: var(--cl-mixed);
+  font-family: var(--text);
+  font-size: 1.5rem;
+}
+
+.resume-btn:hover {
+  background-color: var(--cl-blue);
+  transition: .2s;
 }
 
 
@@ -72,11 +123,17 @@ html {
   z-index: -2;
   filter: blur(40px);
   transform: translate(7.5%);
+  /* animation-name: tilt;
+  animation-duration: infinite; */
 }
 
 .hero-container:before,
 .hero-container:after {
-  background: linear-gradient(35deg, #5fbfff, #485aff, #ffcc34);
+  background: linear-gradient(35deg, var(--cl-blue), var(--cl-mixed), var(--cl-yellow));
+  transform: rotate(6deg);
+  /* animation-name: tilt;
+  animation-duration: 5000s;
+  animation-play-state: running; */
 
   /* background: linear-gradient(35deg, #5fbfff, #fff, #ffcc34); */
 }
@@ -88,6 +145,8 @@ html {
   margin-right: .2rem;
   padding-bottom: 2rem;
   border-radius: 12px;
+  box-shadow: 5px 5px 5px black;
+  /* box-shadow: 5px 5px 5px #ffcc34; */
 }
 
 .hero-header {
@@ -98,9 +157,6 @@ html {
   padding-top: -3rem;
   width: 100%;
   text-align: center;
-  font-family: "Feather Bold";
-  /* font-family: "DIN Next Rounded LT W01 Regular"; */
-  font-family: 'Ubuntu', sans-serif;
 }
 
 .hero-subtitle {
@@ -108,8 +164,16 @@ html {
   margin: 0 5rem;
   text-align: center;
   font-style: italic;
-  font-family: "DIN Next Rounded LT W01 Regular";
 }
+
+/* @keyframes tilt {
+  from {
+    transform: rotate(6deg)
+  }
+  to {
+    transform: rotate(-6deg)
+  }
+} */
 
 
 /*============= Infinite Scroller ============== */
@@ -195,5 +259,101 @@ html {
 
 .bio-container {
   display: flex;
+  flex-direction: row;
 
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.bio-img {
+  height: 550px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px lightgray;
+}
+
+
+.bio-header {
+  font-family: var(--header);
+  font-size: 3rem;
+}
+
+.bio-text {
+  font-family: var(--text);
+  font-size: 1.35rem;
+}
+
+/* ===========EduCard=========== */
+.academiaSection h2 {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+
+}
+
+.eduCard {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 5px lightgray;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  max-width: 400px;
+}
+
+/* .eduCard::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -1;
+  transform: translate(7.5%);
+  border-radius: 12px;
+}
+
+.eduCard::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  bottom: -2px;
+  left: -2px;
+  z-index: -2;
+  filter: blur(40px);
+  transform: translate(7.5%);
+}
+
+.eduCard::before,
+.eduCard::after {
+  background: linear-gradient(35deg, var(--cl-blue), var(--cl-mixed), var(--cl-yellow));
+} */
+
+.edu-img {
+  height: 350px;
+  width: 350px;
+  object-fit:cover;
+  border-radius: 12px;
+}
+
+.eduCard h2, .eduCard p {
+text-align: center;
+}
+
+.eduCard h2 {
+margin-top: 1rem;
+}
+
+.eduCard p {
+  font-size: 1.3rem;
+}
+
+.card-display {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  
 }
