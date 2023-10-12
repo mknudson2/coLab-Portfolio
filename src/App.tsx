@@ -5,17 +5,20 @@ import Hero from "./components/Hero";
 import InfiniteScroll from "./components/InfiniteScroll";
 import Bio from "./components/Bio";
 import Academic from "./components/Academic";
+import Dev from "./components/Dev";
 
 function App() {
   return (
     <>
-    <div id="home"></div>
+      <div id="home"></div>
       <NavbarComponent />
       <Hero />
       <InfiniteScroll />
       <Bio />
       <hr />
       <Academic />
+      <hr />
+      <Dev />
     </>
   );
 }
