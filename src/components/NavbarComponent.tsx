@@ -1,4 +1,3 @@
-import { Button } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -25,7 +24,7 @@ function NavbarComponent() {
           </div>
       </div>
         <div>
-           <Button className='resume-btn'>Resume</Button>
+           <a target="_blank" rel='noopener noreferrer' href="https://drive.google.com/file/d/1uE4RF8UzPnsmQY0idsecb8GP7_l3Ik68/view?usp=sharing"><button className='resume-btn'>Resume</button></a>
         </div>
 
       </Container>

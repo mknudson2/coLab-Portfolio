@@ -82,11 +82,21 @@ hr {
   background-color: var(--cl-mixed);
   font-family: var(--text);
   font-size: 1.5rem;
+  border-radius: 6px;
+  color: white;
+  padding: .5rem 1rem; 
+  border: none;
 }
 
 .resume-btn:hover {
   background-color: var(--cl-blue);
   transition: .2s;
+}
+
+.resume-btn:active {
+  transform: scale(.95);
+  transition: .05s;
+  background: var(--cl-mixed);
 }
 
 
@@ -364,7 +374,7 @@ margin-top: 1rem;
 .devTitle {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .devFlex {
@@ -387,6 +397,7 @@ margin-top: 1rem;
   list-style: none;
   border-bottom: 2px solid lightgray;
   /* margin-bottom: 1.5rem; */
+  padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -429,6 +440,24 @@ margin-top: 1rem;
 }
 
 /*============= Footer ============== */
+
+.toTopLink {
+  text-decoration: none;
+}
+
+.toTop {
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: italic;
+  transform: translateY(4rem);
+  color: white;
+}
+
+.toTop:hover {
+  color: var(--cl-mixed);
+  cursor: pointer;
+  transition: .2s ease-in;
+}
 
 .flexFooter {
   display: flex;
@@ -490,15 +519,17 @@ margin-top: 1rem;
   border: none;
   border-radius: 4px;
   font-size: 2rem;
+  font-family: var(--text);
   align-items: center;
   padding: .75rem 1.5rem;
+  box-shadow: 0 0 45px var(--cl-mixed);
 }
 
 .footerRepo button:hover {
   background-color: var(--cl-mixed);
   box-shadow: 0 0 45px var(--cl-mixed);
   color: white;
-  transition: .2s;
+  transition: .2s ease-in-out;
 }
 
 .footerRepo button:active {

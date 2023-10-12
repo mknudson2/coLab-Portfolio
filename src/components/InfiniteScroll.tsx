@@ -61,7 +61,7 @@ function InfiniteScroll() {
           </li>
         </ul>
       </div>
-
+      <div id="bio"></div>
       <div className="scroller">
         <ul className="scroll-list scroller_inner">
           <li>

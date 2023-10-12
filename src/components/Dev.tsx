@@ -3,15 +3,12 @@ import { useState } from "react";
 function Dev() {
   const [selectedProject, setSelectedProject] = useState<string>("Game Hub");
 
-  //   const devProjects = {
-  //     "Game Hub": "/GameHub.png",
-  //     "To-Do List": "/ToDo.png",
-  //     "Book Collection": "/BookCollection.png",
-  //     "F1 Racer Standings": "/F1.png",
-  //     "Norrœna": "/Norroena.png",
-  //   };
 
-  const devProjects = {
+  const devProjects: Record<string, {
+    image: string;
+    description: string;
+    link: string;
+  }> = {
     "Game Hub": {
       image: "/GameHub.png",
       description:

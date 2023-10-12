@@ -5,6 +5,9 @@ function Footer() {
 
   return (
     <>
+    <a href="#top" className="toTopLink">
+        <p className="toTop">—Back to the top—</p>
+    </a>
       <div className="flexFooter">
         <div className="flexFooterLinks">
           <ul className="footerLinksListItems">

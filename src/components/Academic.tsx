@@ -24,7 +24,7 @@ function Academic() {
 
   return (
     <>
-      <div id="academia" className="academiaSection">
+      <div className="academiaSection">
         <h2>Academia</h2>
         <p></p>
       </div>

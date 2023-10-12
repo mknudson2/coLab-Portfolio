@@ -16,8 +16,10 @@ function App() {
       <Hero />
       <InfiniteScroll />
       <Bio />
+      <div id="academia"></div>
       <hr />
       <Academic />
+      <div id="dev"></div>
       <hr />
       <Dev />
       <Footer />

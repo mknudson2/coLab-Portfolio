@@ -1,6 +1,7 @@
 function Hero() {
   return (
     <>
+    <div id="top"></div>
       <section className="hero-container">
         <div className="hero-bkg">
           <h1 className="hero-header">Where Academia Meets Tech</h1>
