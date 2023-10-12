@@ -6,6 +6,7 @@ import InfiniteScroll from "./components/InfiniteScroll";
 import Bio from "./components/Bio";
 import Academic from "./components/Academic";
 import Dev from "./components/Dev";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Academic />
       <hr />
       <Dev />
+      <Footer />
     </>
   );
 }

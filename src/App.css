@@ -427,3 +427,81 @@ margin-top: 1rem;
   transform: scale(.95);
   background-color: var(--cl-mixed);
 }
+
+/*============= Footer ============== */
+
+.flexFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  gap: 5rem;
+  background: black;
+  box-shadow: 0px 0px 20px black;
+}
+
+.footerLinksListItems {
+  list-style: none;
+  width: fit-content;
+}
+
+.footerLinksListItems li p:hover {
+  color: var(--cl-mixed);
+}
+
+.footerLinksListItems li img {
+  height: 2.5rem;
+  margin-right: 1rem;
+  margin-bottom: .7rem;
+}
+
+.footerLinksListItems li a:first-child {
+  text-decoration: none;
+}
+.roundFooteerImgs {
+  background: white;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+.footerLinksListItems li p {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.footerRepo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footerRepo h3 {
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.footerRepo button {
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 2rem;
+  align-items: center;
+  padding: .75rem 1.5rem;
+}
+
+.footerRepo button:hover {
+  background-color: var(--cl-mixed);
+  box-shadow: 0 0 45px var(--cl-mixed);
+  color: white;
+  transition: .2s;
+}
+
+.footerRepo button:active {
+  transform: scale(.95);
+  transition: .1s;
+}
