@@ -93,7 +93,7 @@ function Games() {
         </Swiper>
       </div>
       <div className="gameParagraph">
-        <p>Games hold a special place in my heart. They have served to inspire me and drive my imagination. As a kid, they brought everyone in our neighborhood together regardless of who they were or if we even ran in the same friend groups. From playing Paper Boy and the original Super Mario Bros with my dad to our weekly game night playing Halo with my dad, brothers, and brother-in-laws, games have been indelibly tied to family time and keeping us together even when we were living in other parts or the world. Because of that, I wanted to showcase a few of my all-time favorites as well some that are currently on my docket. To do this, I used the <strong>rawg.io API</strong> to pull in the various game information, which is the same API I used to create my game hub web app. </p>
+        <p>Games hold a special place in my heart. They have served to inspire me and drive my imagination both personally and professionally. As a kid, they brought everyone in our neighborhood together regardless of who they were or if we even ran in the same friend groups. From playing Paper Boy and the original Super Mario Bros with my dad to our weekly game night playing Halo with my dad, brothers, and brother-in-laws, games have been indelibly tied to family time and keeping us together even when we were living in other parts or the world. Because of that, I wanted to showcase a few of my all-time favorites as well some that are currently on my docket. To do this, I used the <strong><a href="https://rawg.io/apidocs">rawg.io API</a></strong> to pull in the various game information, which is the same API I used to create my game hub web app. </p>
       </div>
     </>
   );

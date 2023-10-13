@@ -390,7 +390,7 @@ margin-top: 1rem;
 }
 
 .projectDescription {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
   width: 75%;
   transform: translate(17.5%);
@@ -558,7 +558,9 @@ margin-top: 1rem;
   margin: 2rem 7rem 3rem 7rem;
 }
 
-.gameParagraph strong {
+
+.gameParagraph a {
+  text-decoration: none;
   color: var(--cl-mixed)
 }
 
