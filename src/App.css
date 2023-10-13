@@ -1,5 +1,7 @@
-
+/* =============================== */
 /* ========== Globals ============ */
+/* =============================== */
+
 :root {
   --header: 'Ubuntu', sans-serif;
   --text: "DIN Next Rounded LT W01 Regular", sans-serif;
@@ -28,7 +30,10 @@ hr {
 }
 
 
+/* ================================== */
 /*============= Navbar ============== */
+/* ================================== */
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -100,7 +105,10 @@ hr {
 }
 
 
+/* ================================ */
 /*============= Hero ============== */
+/* ================================ */
+
 .hero-container {
   margin-top: 10rem;
   margin-bottom: 10rem;
@@ -135,19 +143,12 @@ hr {
   z-index: -2;
   filter: blur(40px);
   transform: translate(7.5%);
-  /* animation-name: tilt;
-  animation-duration: infinite; */
 }
 
 .hero-container:before,
 .hero-container:after {
   background: linear-gradient(35deg, var(--cl-blue), var(--cl-mixed), var(--cl-yellow));
   transform: rotate(6deg);
-  /* animation-name: tilt;
-  animation-duration: 5000s;
-  animation-play-state: running; */
-
-  /* background: linear-gradient(35deg, #5fbfff, #fff, #ffcc34); */
 }
 
 .hero-bkg {
@@ -158,13 +159,11 @@ hr {
   padding-bottom: 2rem;
   border-radius: 12px;
   box-shadow: 5px 5px 5px black;
-  /* box-shadow: 5px 5px 5px #ffcc34; */
 }
 
 .hero-header {
   font-size: 8rem;
   display: block;
-  /* margin-left: 5rem; */
   margin-bottom: 2rem;
   padding-top: -3rem;
   width: 100%;
@@ -178,17 +177,10 @@ hr {
   font-style: italic;
 }
 
-/* @keyframes tilt {
-  from {
-    transform: rotate(6deg)
-  }
-  to {
-    transform: rotate(-6deg)
-  }
-} */
 
-
+/* ============================================= */
 /*============= Infinite Scroller ============== */
+/* ============================================= */
 
 .scroller {
   max-width: 80%;
@@ -267,7 +259,9 @@ hr {
 }
 
 
+/* =============================== */
 /*============= Bio ============== */
+/* =============================== */
 
 .bio-container {
   display: flex;
@@ -294,7 +288,11 @@ hr {
   font-size: 1.35rem;
 }
 
+
+/* ============================= */
 /* ===========EduCard=========== */
+/* ============================= */
+
 .academiaSection h2 {
   text-align: center;
   margin-top: 3rem;
@@ -304,20 +302,10 @@ hr {
 
 }
 
-/* .academicIcon {
-  position: absolute;
-  z-index: -10;
-  top: 204%;
-  right: 3.5%;
-  height: 300px;
-  transform: rotate(15deg);
-} */
-
 .eduCard {
   border: none;
   border-radius: 12px;
-  /* box-shadow: 0 0 15px lightgray; */
-  box-shadow: 5px 5px 15px black;
+  box-shadow: 5px 5px 15px lightgray;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -328,17 +316,8 @@ hr {
 
 .eduCard:hover {
   transform: scale(1.05);
-  box-shadow: 5px 5px 15px var(--cl-mixed);
   transition: .2s ease-in-out;
 }
-
-/* .eduCard:first-of-type:hover{
-  box-shadow: -5px 5px 15px var(--cl-mixed);
-}
-
-.eduCard:last-of-type:hover{
-  box-shadow: 5px 5px 15px var(--cl-mixed);
-} */
 
 .edu-img {
   height: 350px;
@@ -365,8 +344,9 @@ margin-top: 1rem;
   gap: 5rem;
 }
 
-
+/* =============================== */
 /*============= Dev ============== */
+/* =============================== */
 .devTitle {
   font-size: 3rem;
   text-align: center;
@@ -392,7 +372,6 @@ margin-top: 1rem;
 .devList li {
   list-style: none;
   border-bottom: 2px solid lightgray;
-  /* margin-bottom: 1.5rem; */
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
@@ -408,7 +387,6 @@ margin-top: 1rem;
 
 .devImg {
   box-shadow: 5px 5px 15px black;
-
 }
 
 .projectDescription {
@@ -435,7 +413,10 @@ margin-top: 1rem;
   background-color: var(--cl-mixed);
 }
 
+
+/* ================================== */
 /*============= Footer ============== */
+/* ================================== */
 
 .toTopLink {
   text-decoration: none;
@@ -533,3 +514,55 @@ margin-top: 1rem;
   transform: scale(.95);
   transition: .025s;
 }
+
+/* ================================== */
+/*============= Games =============== */
+/* ================================== */
+
+/* .gameContainer {
+  padding-bottom: 3rem;
+} */
+
+.gameContainer h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 3rem;
+}
+
+.swiper_container {
+ width: 80%;
+ }
+
+.gameImg {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+  /* margin-bottom: 3rem; */
+  border-radius: 6px;
+  box-shadow: 5px 5px 5px black;
+}
+
+.gameText {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: var(--header);
+}
+
+#sliderPosition {
+  transform: translateY(1rem);
+}
+
+.gameParagraph {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 7rem 3rem 7rem;
+}
+
+.gameParagraph strong {
+  color: var(--cl-mixed)
+}
+
+
+/* ================================== */
+/*============= Test =============== */
+/* ================================== */
