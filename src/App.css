@@ -298,15 +298,26 @@ hr {
 .academiaSection h2 {
   text-align: center;
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 3rem;
   font-size: 3rem;
+  position: relative;
 
 }
+
+/* .academicIcon {
+  position: absolute;
+  z-index: -10;
+  top: 204%;
+  right: 3.5%;
+  height: 300px;
+  transform: rotate(15deg);
+} */
 
 .eduCard {
   border: none;
   border-radius: 12px;
-  box-shadow: 0 0 5px lightgray;
+  /* box-shadow: 0 0 15px lightgray; */
+  box-shadow: 5px 5px 15px black;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -315,33 +326,18 @@ hr {
   max-width: 400px;
 }
 
-/* .eduCard::before {
-  content: '';
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  z-index: -1;
-  transform: translate(7.5%);
-  border-radius: 12px;
+.eduCard:hover {
+  transform: scale(1.05);
+  box-shadow: 5px 5px 15px var(--cl-mixed);
+  transition: .2s ease-in-out;
 }
 
-.eduCard::after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  right: -2px;
-  bottom: -2px;
-  left: -2px;
-  z-index: -2;
-  filter: blur(40px);
-  transform: translate(7.5%);
+/* .eduCard:first-of-type:hover{
+  box-shadow: -5px 5px 15px var(--cl-mixed);
 }
 
-.eduCard::before,
-.eduCard::after {
-  background: linear-gradient(35deg, var(--cl-blue), var(--cl-mixed), var(--cl-yellow));
+.eduCard:last-of-type:hover{
+  box-shadow: 5px 5px 15px var(--cl-mixed);
 } */
 
 .edu-img {
@@ -489,7 +485,7 @@ margin-top: 1rem;
 .footerLinksListItems li a:first-child {
   text-decoration: none;
 }
-.roundFooteerImgs {
+.roundFooterImgs {
   background: white;
   border-radius: 8px;
   padding: 2px;
@@ -516,6 +512,7 @@ margin-top: 1rem;
 
 .footerRepo button {
   background-color: white;
+  color: var(--cl-mixed);
   border: none;
   border-radius: 4px;
   font-size: 2rem;
@@ -529,10 +526,10 @@ margin-top: 1rem;
   background-color: var(--cl-mixed);
   box-shadow: 0 0 45px var(--cl-mixed);
   color: white;
-  transition: .2s ease-in-out;
+  transition: .1s ease-in-out;
 }
 
 .footerRepo button:active {
   transform: scale(.95);
-  transition: .1s;
+  transition: .025s;
 }

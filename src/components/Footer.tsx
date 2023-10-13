@@ -1,13 +1,13 @@
 function Footer() {
-    const handleViewRepoClick = () => {
-        window.location.href = "https://github.com/mknudson2/coLab-Portfolio";
-      };
+  const handleViewRepoClick = () => {
+    window.location.href = "https://github.com/mknudson2/coLab-Portfolio";
+  };
 
   return (
     <>
-    <a href="#top" className="toTopLink">
+      <a href="#top" className="toTopLink">
         <p className="toTop">—Back to the top—</p>
-    </a>
+      </a>
       <div className="flexFooter">
         <div className="flexFooterLinks">
           <ul className="footerLinksListItems">
@@ -20,27 +20,39 @@ function Footer() {
               </a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/michaelknudson2/">
-              <p>
-                    <img className="roundFooteerImgs" src="/linkedin-svgrepo-com.svg" alt="" />
-                    LinkedIn
-                                  </p>
-                </a>
+              <a href="https://www.linkedin.com/in/michaelknudson2/">
+                <p>
+                  <img
+                    className="roundFooterImgs"
+                    src="/linkedin-svgrepo-com.svg"
+                    alt=""
+                  />
+                  LinkedIn
+                </p>
+              </a>
             </li>
             <li>
               <a href="https://github.com/mknudson2">
-                  <p>
-                    <img className="roundFooteerImgs" src="/github-icon-1.svg" alt="" />
-                    GitHub
-                  </p>
+                <p>
+                  <img
+                    className="roundFooterImgs"
+                    src="/github-icon-1.svg"
+                    alt=""
+                  />
+                  GitHub
+                </p>
               </a>
             </li>
             <li>
               <a href="https://wisc.academia.edu/MichaelKnudson">
-                  <p>
-                    <img className="roundFooteerImgs" src="/academia-svgrepo-com.svg" alt="" />
-                    Academia.edu
-                  </p>
+                <p>
+                  <img
+                    className="roundFooterImgs"
+                    src="/academia-svgrepo-com.svg"
+                    alt=""
+                  />
+                  Academia.edu
+                </p>
               </a>
             </li>
           </ul>
