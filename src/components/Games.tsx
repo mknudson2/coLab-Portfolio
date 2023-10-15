@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
-import { EffectCoverflow, Pagination } from "swiper/modules";
+// import { EffectCoverflow, Pagination } from "swiper/modules";
 
 function Games() {
   const [games, setGames] = useState<any[]>([]);
