@@ -6,35 +6,24 @@ function InfiniteScroll() {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
-    if (
-      animate &&
-      !window.matchMedia("(prefers-reduced-motion: reduce)").matches
-    ) {
+    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       addAnimation();
     }
 
     function addAnimation() {
       scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", "true");
+
         const scrollerInner = scroller.querySelector(".scroller_inner");
+
         if (scrollerInner) {
           const scrollerContent = Array.from(scrollerInner.children);
 
-          // Calculate the total width of all items
-          const totalWidth = scrollerContent.reduce((acc, item) => {
-            return acc + item.clientWidth;
-          }, 0);
-
-          // Duplicate items to fill the screen
-          let currentWidth = 0;
-          while (currentWidth < scroller.clientWidth) {
-            scrollerContent.forEach((item) => {
-              const duplicatedItem = item.cloneNode(true);
-              scrollerInner?.appendChild(duplicatedItem);
-              currentWidth += item.clientWidth;
-            });
-          }
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            scrollerInner?.appendChild(duplicatedItem);
+          });
         }
-        scroller.setAttribute("data-animated", "true");
       });
     }
 
@@ -44,7 +33,7 @@ function InfiniteScroll() {
 
   return (
     <>
-      <div className="scroller" data-direction="right" data-speed="fast">
+      <div className="scroller" data-direction="right" scroll-speed="fast">
         <ul className="scroll-list scroller_inner">
           <li>
             <img src="/html.png" alt="html5" />
