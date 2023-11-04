@@ -33,7 +33,7 @@ function InfiniteScroll() {
 
   return (
     <>
-      <div className="scroller" data-direction="right" data-speed="fast">
+      <div className="scroller" data-direction="right" data-speed="medium">
         <ul className="scroll-list scroller_inner">
           <li>
             <img src="/html.png" alt="html5" />

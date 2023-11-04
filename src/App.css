@@ -219,8 +219,8 @@ hr {
   --_animation-duration: 100s;
 }
 
-.scroller[data-speed="fast"] {
-  --_animation-duration: 50s;
+.scroller[data-speed="medium"] {
+  --_animation-duration: 80s;
 }
 
 @keyframes scroll {
