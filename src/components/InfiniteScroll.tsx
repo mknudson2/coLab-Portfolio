@@ -11,21 +11,29 @@ function InfiniteScroll() {
     }
 
     function addAnimation() {
-      scrollers.forEach((scroller) => {
-        scroller.setAttribute("data-animated", "true");
+  scrollers.forEach((scroller) => {
+    const scrollerInner = scroller.querySelector(".scroller_inner");
+    if (scrollerInner) {
+      const scrollerContent = Array.from(scrollerInner.children);
 
-        const scrollerInner = scroller.querySelector(".scroller_inner");
+      // Calculate the total width of all items
+      const totalWidth = scrollerContent.reduce((acc, item) => {
+        return acc + item.clientWidth;
+      }, 0);
 
-        if (scrollerInner) {
-          const scrollerContent = Array.from(scrollerInner.children);
-
-          scrollerContent.forEach((item) => {
-            const duplicatedItem = item.cloneNode(true);
-            scrollerInner?.appendChild(duplicatedItem);
-          });
-        }
-      });
+      // Duplicate items to fill the screen
+      let currentWidth = 0;
+      while (currentWidth < scroller.clientWidth) {
+        scrollerContent.forEach((item) => {
+          const duplicatedItem = item.cloneNode(true);
+          scrollerInner?.appendChild(duplicatedItem);
+          currentWidth += item.clientWidth;
+        });
+      }
     }
+    scroller.setAttribute("data-animated", "true");
+  });
+}
 
     // Clean up function to stop the animation when the component unmounts
     return () => setAnimate(false);
