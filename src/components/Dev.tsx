@@ -3,16 +3,18 @@ import { useState } from "react";
 function Dev() {
   const [selectedProject, setSelectedProject] = useState<string>("Game Hub");
 
-
-  const devProjects: Record<string, {
-    image: string;
-    description: string;
-    link: string;
-  }> = {
+  const devProjects: Record<
+    string,
+    {
+      image: string;
+      description: string;
+      link: string;
+    }
+  > = {
     "Game Hub": {
       image: "/GameHub.png",
       description:
-        "A game discovery web app (Rawg.io clone) that allows the user to filter by genre and platform in addition to searching a specific game. Makes use of the rawg API to get game data. Built with React, Vite TypeScript,and ChakraUI.",
+        "A game discovery web app (Rawg.io clone) that allows the user to filter by genre and platform in addition to searching a specific game. Makes use of the rawg API to get game data. Built with React, Vite, TypeScript, and ChakraUI.",
       link: "https://github.com/mknudson2/game-hub",
     },
     "To-Do List": {
@@ -36,7 +38,7 @@ function Dev() {
     Norrœna: {
       image: "/Norroena.png",
       description:
-        "From my captstone project at Coding Temple, Norrœna is a prototype for a longstanding passion project of mine. Born of my background in academia, this project is aimed at being the ultimate hub for Old Norse/Old Icelandic studies for enthusiasts, novices, and experienced researches alike with interactive texts, a custom dictionary, resources, and unique lessons in Old Norse language. Users can create a profile and connect with other researchers all ove rthe world. Built using React, Vite, TypeScript, Python, Flask, PostgreSQL, with API testing via Insomnia. ",
+        "From my captstone project at Coding Temple, Norrœna is a prototype for a longstanding passion project of mine. Born of my background in academia, this project is aimed at being the ultimate hub for Old Norse/Old Icelandic studies for enthusiasts, novices, and experienced researches alike with interactive texts, a custom dictionary, resources, and unique lessons in Old Norse language. Users can create a profile and connect with other researchers all over the world. Built using React, Vite, TypeScript, Python, Flask, PostgreSQL, with API testing via Insomnia. ",
       link: "https://github.com/mknudson2/capstone-react",
     },
   };

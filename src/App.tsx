@@ -16,6 +16,7 @@ function App() {
       <NavbarComponent />
       <Hero />
       <InfiniteScroll />
+      <div id="bio"></div>
       <Bio />
       <div id="academia"></div>
       <hr />

@@ -18,7 +18,8 @@ function Games() {
       "star-wars-jedi-survivor",
       "the-legend-of-zelda-breath-of-the-wild",
       "high-on-life",
-      "assassins-creed-valhalla"
+      "assassins-creed-valhalla",
+      "star-wars-knights-of-the-old-republic"
     ];
     const baseURL = "https://rawg.io/api/games";
 

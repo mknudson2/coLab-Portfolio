@@ -302,6 +302,11 @@ hr {
 
 }
 
+.edu-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .eduCard {
   border: none;
   border-radius: 12px;
@@ -342,6 +347,43 @@ margin-top: 1rem;
   display: flex;
   justify-content: center;
   gap: 5rem;
+}
+
+.edu-plus {
+  text-decoration: none;
+  color: var(--cl-mixed);
+  background-color: transparent;
+  border: none;
+}
+
+.edu-plus:hover {
+  transform: scale(2);
+  transition: .1s ease-in-out;
+  /* color: var(--cl-mixed); */
+  cursor: pointer;
+}
+
+.edu-plus:active{
+  transform: scale(1.9);
+  color: #3c4cdd;
+}
+
+.edu-DescContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu-description {
+  width: 70%;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+
+.edu-description p{
+  font-size: 1.5rem;
+  margin: auto;
 }
 
 /* =============================== */
