@@ -1,26 +1,35 @@
+import { useEffect, useState } from "react";
+
 function InfiniteScroll() {
-  const scrollers = document.querySelectorAll(".scroller");
+  const [animate, setAnimate] = useState(true);
 
-  if (!window.matchMedia("(prefers-reduced-motion: no-preference)").matches) {
-    addAnimation();
-  }
+  useEffect(() => {
+    const scrollers = document.querySelectorAll(".scroller");
 
-  function addAnimation() {
-    scrollers.forEach((scroller) => {
-      scroller.setAttribute("data-animated", "true");
+    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      addAnimation();
+    }
 
-      const scrollerInner = scroller.querySelector(".scroller_inner");
+    function addAnimation() {
+      scrollers.forEach((scroller) => {
+        scroller.setAttribute("data-animated", "true");
 
-      if (scrollerInner) {
-        const scrollerContent = Array.from(scrollerInner.children);
+        const scrollerInner = scroller.querySelector(".scroller_inner");
 
-        scrollerContent.forEach((item) => {
-          const duplicatedItem = item.cloneNode(true);
-          scrollerInner?.appendChild(duplicatedItem);
-        });
-      }
-    });
-  }
+        if (scrollerInner) {
+          const scrollerContent = Array.from(scrollerInner.children);
+
+          scrollerContent.forEach((item) => {
+            const duplicatedItem = item.cloneNode(true);
+            scrollerInner?.appendChild(duplicatedItem);
+          });
+        }
+      });
+    }
+
+    // Clean up function to stop the animation when the component unmounts
+    return () => setAnimate(false);
+  }, [animate]);
 
   return (
     <>
