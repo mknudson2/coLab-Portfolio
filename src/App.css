@@ -224,6 +224,9 @@ hr {
 }
 
 @keyframes scroll {
+  from {
+    transform: translate(100%);
+  }
   to {
     transform: translate(-100%);
   }
