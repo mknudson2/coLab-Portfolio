@@ -220,7 +220,7 @@ hr {
 }
 
 .scroller[data-speed="fast"] {
-  --_animation-duration: 30s;
+  --_animation-duration: 50s;
 }
 
 @keyframes scroll {
