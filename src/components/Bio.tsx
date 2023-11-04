@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 function Bio() {
   return (
     <>
-      <Container className="bio-container" id="bio">
+      <Container className="bio-container">
         <div>
           <img className="bio-img" src="/hero-img.JPG" alt="" />
         </div>

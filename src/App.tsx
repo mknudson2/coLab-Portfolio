@@ -12,18 +12,19 @@ import Games from "./components/Games";
 function App() {
   return (
     <>
-      <div id="home"></div>
+      <div id="home" />
       <NavbarComponent />
       <Hero />
       <InfiniteScroll />
+      <div id="bio"/>
       <Bio />
-      <div id="academia"></div>
+      <div id="academia"/>
       <hr />
       <Academic />
-      <div id="dev"></div>
+      <div id="dev" />
       <hr />
       <Dev />
-      <div id="personal"></div>
+      <div id="personal" />
       <hr />
       <Games />
       <Footer />
