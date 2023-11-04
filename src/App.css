@@ -8,6 +8,7 @@
   --cl-yellow: #ffcc34;
   --cl-blue: #5fbfff;
   --cl-mixed: #485aff;
+  --cl-mixedActive: #3c4cdd;
 }
 
 html {
@@ -365,7 +366,7 @@ margin-top: 1rem;
 
 .edu-plus:active{
   transform: scale(1.9);
-  color: #3c4cdd;
+  color: var(--cl-mixedActive)
 }
 
 .edu-DescContainer {
@@ -441,18 +442,37 @@ margin-top: 1rem;
 }
 
 .gitHubIcon {
-  height: 3rem;
-  border-radius: 50%;
   margin-left: 1rem;
+  margin-right: .75rem;
+  color: black;
+  transform: scale(1.75);
 }
 
 .gitHubIcon:hover {
-  box-shadow: 0 0 1rem var(--cl-mixed);
+  color: var(--cl-mixed);
+  transform: scale(2);
 }
 
 .gitHubIcon:active {
-  transform: scale(.95);
+  transform: scale(1.9);
   background-color: var(--cl-mixed);
+  color: var(--cl-mixedActive)
+}
+
+.dev-webIcon {
+  transform: scale(2.3);
+  color: black;
+  margin-left: 1.5rem;
+}
+
+.dev-webIcon:hover {
+  color: var(--cl-mixed);
+  transform: scale(2.5);
+}
+
+.dev-webIcon:active {
+  transform: scale(2.4);
+  color: var(--cl-mixedActive)
 }
 
 
