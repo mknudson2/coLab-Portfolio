@@ -216,7 +216,7 @@ hr {
 }
 
 .scroller[data-speed="slow"] {
-  --_animation-duration: 100s;
+  --_animation-duration: 120s;
 }
 
 .scroller[data-speed="medium"] {
@@ -224,9 +224,6 @@ hr {
 }
 
 @keyframes scroll {
-  from {
-    transform: translate(100%);
-  }
   to {
     transform: translate(-100%);
   }
