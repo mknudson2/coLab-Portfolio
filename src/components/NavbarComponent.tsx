@@ -24,7 +24,7 @@ function NavbarComponent() {
           </div>
       </div>
         <div>
-           <a target="_blank" rel='noopener noreferrer' href="https://drive.google.com/file/d/1uE4RF8UzPnsmQY0idsecb8GP7_l3Ik68/view?usp=sharing"><button className='resume-btn'>Resume</button></a>
+           <a target="_blank" rel='noopener noreferrer' href="https://drive.google.com/file/d/1yVHyTQTU-Y-nPb46et71DdHsSbtIMLje/view?usp=sharing"><button className='resume-btn'>Resume</button></a>
         </div>
 
       </Container>
