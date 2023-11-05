@@ -16,7 +16,7 @@ function App() {
       <NavbarComponent />
       <Hero />
       <InfiniteScroll />
-      <div id="bio"/>
+      {/* <div id="bio"/> */}
       <Bio />
       <div id="academia"/>
       <hr />
