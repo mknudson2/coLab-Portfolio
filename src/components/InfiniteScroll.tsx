@@ -6,7 +6,10 @@ function InfiniteScroll() {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".scroller");
 
-    if (animate && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    if (
+      animate &&
+      !window.matchMedia("(prefers-reduced-motion: reduce)").matches
+    ) {
       addAnimation();
     }
 
@@ -70,7 +73,7 @@ function InfiniteScroll() {
           </li>
         </ul>
       </div>
-
+      <div id="bio" />
       <div className="scroller">
         <ul className="scroll-list scroller_inner">
           <li>
@@ -90,7 +93,6 @@ function InfiniteScroll() {
           </li>
         </ul>
       </div>
-      <div id="bio" />
     </>
   );
 }
